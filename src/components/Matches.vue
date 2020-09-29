@@ -1,5 +1,6 @@
 <template>
     <div class="match">
+        <IndividualTeamStats/>
        <div  v-bind:key="match.id" v-for="match in matches">
          <MatchItem v-bind:match="match"/>
 
@@ -9,10 +10,12 @@
 
 <script>
 import MatchItem from './MatchItem.vue';
+import IndividualTeamStats from './IndividualTeamStats.vue';
 export default {
     name:"IPL Matches stats",
     components:{
-        MatchItem
+        MatchItem,
+        IndividualTeamStats
     }
     ,
     props:["matches"]

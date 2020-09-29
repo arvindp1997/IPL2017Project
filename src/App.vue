@@ -2,7 +2,7 @@
   <div id="app" class="main">
     <img alt="Vue logo" src="./assets/ipl2017.webp">
     <br/>
-    <h1 class="title"> IPL 2017 Matches Summary </h1>
+    <h1 class="title"> IPL 2017 Matches Summary  </h1>
      <Matches v-bind:matches="matches"/>
   </div>
 </template>
